@@ -43,4 +43,12 @@ public class Album {
 
     @Min(value = 1, message = "Album tracks should be a positive number")
     private Integer tracks;
+
+    public Album(String title, String artistName, Date releaseDate, Integer tracks) {
+        this.title = title;
+        this.artistName = artistName;
+        this.releaseDate = releaseDate;
+        this.tracks = tracks;
+    }
+
 }

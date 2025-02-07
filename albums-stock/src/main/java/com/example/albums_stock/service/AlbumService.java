@@ -26,7 +26,7 @@ public class AlbumService {
 
     public Album create(AlbumPayload payload) {
         return albumRepository.save(
-                new Album(UUID.randomUUID(),
+                new Album(
                         payload.getTitle(),
                         payload.getArtistName(),
                         payload.getReleaseDate(),
