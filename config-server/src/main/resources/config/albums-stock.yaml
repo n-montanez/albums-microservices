@@ -22,19 +22,3 @@ spring:
     hibernate:
       ddl-auto: update
 
-eureka:
-  client:
-    register-with-eureka: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    prefer-ip-address: true
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
